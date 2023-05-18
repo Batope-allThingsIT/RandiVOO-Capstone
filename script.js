@@ -1,4 +1,5 @@
 var randomSpeakers = [];
+
 var randomColleges = [];
 
 var time = ["Monday", "Tuesday", "Wednessday", "Thursday", "Friday"];
@@ -16,16 +17,19 @@ async function produceResults() {
         console.log(speakers.length, colleges.length);
         randomColleges = [];
         randomSpeakers = [];
+
         for (let i = 0; i < 5; i++) {
           var index1 = Math.floor(Math.random() * speakers.length);
           randomSpeakers.push(speakers[index1].name);
           speakers.splice(index1, 1);
         }
+
         for (let i = 0; i < 5; i++) {
           var index2 = Math.floor(Math.random() * colleges.length);
           randomColleges.push(colleges[index2].name);
           colleges.splice(index2, 1);
         }
+
         for (let i = 0; i < 5; i++) {
           document.getElementById("table-body").innerHTML += `<tr>
       <td>${randomSpeakers[i]}</td>
