@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Speaker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>RendiVoo: Speakers and Events</h1>
+        <h3>Enter ZipCode to find visiting Speakers</h3>
+        <div>
+            <input type="text" value="" class="search-bar" maxlength="5" maxlength="5" placeholder="Enter Zip Code.."
+                id="zipCodeInput">
+            <button type="button" class="search-button" onclick="produceResults()">Search</button>
+        </div>
+        <table>
+            <thead id="table-head">
+                <tr>
+                    <th>Visiting Speakers</th>
+                    <th>Time</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
