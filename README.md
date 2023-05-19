@@ -1,2 +1,2 @@
 # RandiVOO-Capstone
-Capstone Project
+Capstone Project - Searching Venue and public speakers
